@@ -144,6 +144,25 @@ class EraporUpdate extends Command
                         'periode_aktif' => 0,
                     ]
                 ],
+            ],
+            [
+                'tahun_ajaran_id' => 2023,
+                'nama' => '2023/2024',
+                'periode_aktif' => 1,   
+                'semester' => [
+                    [
+                        'semester_id' => 20231,
+                        'nama' => '2023/2024 Ganjil',
+                        'semester' => 1,
+                        'periode_aktif' => 1,
+                    ],
+                    [
+                        'semester_id' => 20232,
+                        'nama' => '2023/2024 Genap',
+                        'semester' => 2,
+                        'periode_aktif' => 0,
+                    ]
+                ],
             ]
         ];
         $adminRole = Role::where('name', 'admin')->first();
